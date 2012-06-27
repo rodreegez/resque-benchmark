@@ -15,5 +15,6 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.version       = Resque::Benchmark::VERSION
 
+  gem.add_dependency('resque')
   gem.add_development_dependency('rake')
 end
