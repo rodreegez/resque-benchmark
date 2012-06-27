@@ -4,8 +4,8 @@ require File.expand_path('../lib/resque-benchmark/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Adam"]
   gem.email         = ["electronicbattleweapon7@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Benchmark your Resque jobs}
+  gem.summary       = %q{Keep track of how long it takes to run your Resque jobs, from queueing to completion}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -14,4 +14,6 @@ Gem::Specification.new do |gem|
   gem.name          = "resque-benchmark"
   gem.require_paths = ["lib"]
   gem.version       = Resque::Benchmark::VERSION
+
+  gem.add_development_dependency('rake')
 end
