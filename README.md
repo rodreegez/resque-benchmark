@@ -18,7 +18,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    class MyJob
+      extend Resque::Plugins::Benchmark
+
+      def perform(id)
+        # do something with id
+      end
+
+    end
+
+This will diff the enqueue/finish times and store them in a Redis set named `benchmark:aggregate:MyJob`. TODO: provide some kind of interface to this data.
 
 ## Contributing
 
